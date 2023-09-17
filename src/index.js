@@ -18,6 +18,7 @@ checkDirExist(targetDir);
 longboardTurn.content.forEach((card, index) => {
   CardRender({
     ...card,
+    brandTitle: longboardTurn.brandTitle,
     targetPath: path.join(targetDir, `./contet_${index}.png`),
   });
 });
